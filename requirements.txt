@@ -1,13 +1,5 @@
 fastapi==0.68.1
 uvicorn==0.15.0
-twilio==7.12.0
-openai-whisper==20231117
-google-cloud-texttospeech==2.14.1
-transformers==4.35.2
-torch==2.1.1
-spacy==3.7.2
-vaderSentiment==3.3.2
-keyphrase-vectorizers==0.0.11
-python-dotenv==1.0.0
-streamlit==1.28.2
 pydantic==1.10.13
+requests==2.31.0
+python-dotenv==1.0.0
