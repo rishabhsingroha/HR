@@ -19,7 +19,7 @@ class CallHandler:
             "What are your key skills?",
             "How many years of experience do you have?",
             "What is your current location?",
-            "Are you available to join immediately?"
+            
         ]
 
     async def start_call(self, to_number: str) -> Dict:
