@@ -101,10 +101,6 @@ class CallHandler:
             "call_id": "mock_call_id",
             "status": "completed",
             "responses": [
-                "I am John Doe with 5 years of software development experience.",
-                "My key skills are Python, JavaScript, and Cloud Technologies.",
-                "5 years",
-                "New York",
-                "Yes, I can join within 2 weeks"
+                
             ]
         }
