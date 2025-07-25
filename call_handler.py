@@ -18,7 +18,6 @@ class CallHandler:
             "Can you tell me about yourself?",
             "What are your key skills?",
             "How many years of experience do you have?",
-            "What is your current location?",
             
         ]
 
