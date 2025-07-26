@@ -15,9 +15,7 @@ class CallHandler:
         self.client = Client(self.account_sid, self.auth_token)
         self.tts = TextToSpeech()
         self.questions = [
-            "Can you tell me about yourself?",
-            "What are your key skills?",
-            "How many years of experience do you have?",
+         
             
         ]
 
