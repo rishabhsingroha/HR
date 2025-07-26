@@ -14,7 +14,10 @@ class DecisionEngine:
             ]
         }
         
-    
+        self.red_flags = [
+            'Negative language detected',
+            'Very short response',
+            'Vague response'
         ]
 
     async def evaluate(self, analysis: Dict) -> Dict:
