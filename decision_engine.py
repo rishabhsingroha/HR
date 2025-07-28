@@ -22,7 +22,7 @@ class DecisionEngine:
 
     async def evaluate(self, analysis: Dict) -> Dict:
         """Evaluate candidate based on NLP analysis results"""
-        try:
+        
             # Extract relevant information
             sentiment = analysis.get('sentiment', '')
             keywords = analysis.get('keywords', [])
