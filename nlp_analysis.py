@@ -51,7 +51,16 @@ class NLPAnalyzer:
             # Combine both analyses
             compound_score = vader_scores['compound']
             
-
+            if compound_score >= 0.5:
+                return "Very Positive"
+            elif compound_score > 0:
+                return "Positive"
+            elif compound_score == 0:
+                return "Neutral"
+            elif compound_score > -0.5:
+                return "Negative"
+            else:
+                return "Very Negative"
 
         except Exception:
             # Fallback to basic sentiment analysis
