@@ -1,9 +1,3 @@
-from transformers import pipeline
-from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
-from keyphrase_vectorizers import KeyphraseCountVectorizer
-from typing import Dict, List, Tuple
-import spacy
-import re
 
 class NLPAnalyzer:
     def __init__(self):
