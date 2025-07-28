@@ -29,11 +29,7 @@ class NLPAnalyzer:
             tone_flags = await self._check_tone(text)
 
             return {
-                "sentiment": sentiment,
-                "keywords": keywords,
-                "entities": entities,
-                "tone_flags": tone_flags,
-                "extracted_info": self._extract_candidate_info(text)
+               
             }
 
         except Exception as e:
