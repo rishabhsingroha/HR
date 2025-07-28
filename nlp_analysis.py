@@ -23,10 +23,7 @@ class NLPAnalyzer:
     async def analyze(self, text: str) -> Dict:
         """Perform comprehensive NLP analysis on text"""
         try:
-            sentiment = await self._analyze_sentiment(text)
-            keywords = await self._extract_keywords(text)
-            entities = await self._extract_entities(text)
-            tone_flags = await self._check_tone(text)
+           
 
             return {
                 "sentiment": sentiment,
