@@ -68,6 +68,11 @@ class SpeechToText:
                 temp_file.write(audio_stream)
                 temp_path = temp_file.name
 
+            try:
+                result = self.model.transcribe(temp_path)
+                return {
+                    "text": result["text"],
+                    "language": result.get("language", "en")
                 }
             finally:
                 if os.path.exists(temp_path):
