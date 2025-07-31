@@ -82,13 +82,7 @@ async def process_response(audio_data: bytes = b'') -> CandidateResponse:
         decision = "Recommend" if sentiment == "Positive" else "Consider"
         
         return CandidateResponse(
-            candidate_name="Mock Candidate",
-            skills=keywords,
-            experience="5 years",  # Mock data
-            location="San Francisco",  # Mock data
-            sentiment=sentiment,
-            decision=decision,
-            reason="Mock evaluation based on sentiment analysis"
+           
         )
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
