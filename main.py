@@ -13,6 +13,11 @@ from mock_services import (
 
 app = FastAPI(title="Voice AI HR Agent (Local Mock Version)")
 
+# Initialize mock services
+twilio_service = MockTwilioService()
+tts_service = MockTTSService()
+stt_service = MockSTTService()
+nlp_service = MockNLPService()
 
 class CandidateResponse(BaseModel):
     candidate_name: str
