@@ -99,6 +99,6 @@ async def health_check():
 
 if __name__ == "__main__":
     print("Starting Voice AI HR Agent in Mock Mode...")
-   
+    print("No external services or API keys required")
     print("Access the API documentation at http://localhost:8000/docs")
     uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
