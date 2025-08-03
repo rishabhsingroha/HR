@@ -93,6 +93,9 @@ async def process_response(audio_data: bytes = b'') -> CandidateResponse:
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
+@app.get("/health")
+async def health_check():
+    return {"status": "healthy", "mode": "mock"}
 
 if __name__ == "__main__":
     print("Starting Voice AI HR Agent in Mock Mode...")
