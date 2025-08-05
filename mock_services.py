@@ -75,4 +75,4 @@ class MockNLPService:
             if word in tech_skills or word in soft_skills:
                 keywords.append(word.title())
         
-        return list(set(keywords))/
+        return list(set(keywords))
