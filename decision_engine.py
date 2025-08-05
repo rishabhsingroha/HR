@@ -155,4 +155,14 @@ class DecisionEngine:
         
         return relevant_skills[:5]  # Return top 5 relevant skills
 
-   
+    def _generate_error_response(self, error_message: str) -> Dict:
+        """Generate error response when evaluation fails"""
+        return {
+            'candidate_name': 'Error',
+            'skills': [],
+            'experience': 'N/A',
+            'location': 'N/A',
+            'sentiment': 'N/A',
+            'decision': 'Error',
+            'reason': f'Evaluation failed: {error_message}'
+        }
